@@ -12,3 +12,13 @@
 
 #ignore model files
 **/results/
+
+#ignore images
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+#ignore pickle files
+*.pkl
+*.pickle
