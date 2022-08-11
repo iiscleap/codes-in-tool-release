@@ -1,0 +1,15 @@
+[default]
+architecture = TransformerClassifier
+
+apply_mean_norm = False
+apply_var_norm = False
+
+tr_num_heads = 8
+tr_num_layers = 1
+tr_ff_dim = 1024
+tr_dropout = 0.1
+tr_pooling = average
+
+classifier_units = 64
+classifier_activation = Tanh
+classifier_dropout = 0.1
