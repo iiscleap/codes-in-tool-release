@@ -1,0 +1,15 @@
+[default]
+architecture = LSTMClassifier
+
+apply_mean_norm = False
+apply_var_norm = False
+
+lstm_encoder_units = 128
+lstm_num_layers = 2
+lstm_bidirectional = True
+lstm_dropout = 0.1
+lstm_pooling = average
+
+classifier_units = 64
+classifier_activation = Tanh
+classifier_dropout = 0.1

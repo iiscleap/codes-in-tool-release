@@ -1,0 +1,47 @@
+[default]
+seed = 42
+datasetModule = DiCOVA_2_Dataset
+
+[training_dataset]
+# mode can be 'segment' or 'file'
+mode = segment
+
+# Apply utterance level normalization
+apply_mean_norm = True
+apply_var_norm = True
+
+# Oversamples the positive class samples (minority class)
+oversampling = True
+# when set to -1 oversampling_factor is computed automatically
+oversampling_factor = -1
+
+# For segment mode 
+segment_length = 51
+segment_hop = 10
+
+[augmentation]
+#mode can be 'masking' or 'None'
+mode = None
+freq_mask_param = 5
+time_mask_param = 20
+noise_augmentation = False
+
+[validation_dataset]
+# mode can be 'segment' or 'file'
+mode = segment
+apply_mean_norm = True
+apply_var_norm = True
+
+oversampling = False
+oversampling_factor = -1
+segment_length = 51
+segment_hop = 10
+
+[training]
+batch_size = 128
+epochs = 10
+learning_rate = 0.00001
+lr_scheme = custom
+learning_rate_decay = 0.1
+weight_decay = 0.0001
+use_gpu = True

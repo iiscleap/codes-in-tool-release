@@ -1,0 +1,9 @@
+[default]
+resampling_rate = 44100
+feature_type = logMelSpec
+n_mels = 64
+f_max = 22050
+window_size = 25
+hop_length = 10
+compute_deltas = True
+compute_delta_deltas = True

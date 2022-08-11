@@ -1,1 +1,14 @@
-*.txt
+#ignore the audio files
+*.wav
+*.flac
+*.mp3
+
+#ignore the Dataset directory
+**/Dataset/
+
+#ignore log files
+*.out
+*.err
+
+#ignore model files
+**/results/
