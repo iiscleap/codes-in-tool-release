@@ -50,10 +50,10 @@ pos_ids, neg_ids = df_gnd_truth[df_gnd_truth.label=='p'].id.values, df_gnd_truth
 if not os.path.exists(work_dir):
         os.mkdir(work_dir)
 
-# random sample analysis [here we can sample 100 pos and 100 neg and check the AUC. this gives us idea about bias due to random seed]
-print('prevelance bias analysis using 10 seeds')
-#bp()
-# n_pos_sample are 100, 70, 30,15,7 for 25%, 20%, 10%, 5% and 2.5% prevelence(n_rat) respectively
+# prevalence level bias analysis [here we can sample pos and neg samples based on a set prevalence level and check the AUC. this gives us idea about bias due to prevalence level]
+print('prevalance bias analysis using 5 seeds')
+
+# n_pos_sample are 100, 70, 30,15,7 for 25%, 20%, 10%, 5% and 2.5% prevalence(n_rat) respectively
 
 n_pos_sample=7
 n_rat=0.025
