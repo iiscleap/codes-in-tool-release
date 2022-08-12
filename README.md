@@ -10,5 +10,6 @@ This is the official github repository for the [screening-tool](https://coswara.
 6. In terminal, run `./prpare_feats.sh` for all the 9 audio categories: `breathing-deep`, `breathing-shallow`, `cough-heavy`, `cough-shallow`, `vowel-a`, `vowel-e`, `vowel-o`, `counting-normal`, `counting-fast`.
 6. Type `./run.sh` in your terminal and ENTER. Once done, you can find the results inside `results` folder.
 
-**To get the transformer classifier results**:\\
+**To get the transformer classifier results**:
+
 Follow the steps described in **To get the BLSTM classifier results** after replacing `classifier_BLSTM_model` by `classifier_transformer_model` in steps 4 and 5.
