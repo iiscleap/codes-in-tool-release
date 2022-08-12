@@ -19,18 +19,18 @@ def do_score_fusion(ffolders,outscores,normalize=False,weights=None):
     scores={}
     for i in range(len(ffolders)):
     	temp=to_dict(ffolders[i])
-    	if normalize:
-    		# Map the scores between 0-1
-    		min_score = temp[min(temp,key=temp.get)]
-    		max_score = temp[max(temp,key=temp.get)]
-    		score_range = max_score-min_score
-    		for item in temp:
-    			temp[item] = (temp[item]-min_score)/score_range
-    	scores[i] = temp
+		if normalize:
+			# Map the scores between 0-1
+			min_score = temp[min(temp,key=temp.get)]
+			max_score = temp[max(temp,key=temp.get)]
+			score_range = max_score-min_score
+			for item in temp:
+				temp[item] = (temp[item]-min_score)/score_range
+		scores[i] = temp
     # Fused score is an average of the test scores
-    fused_scores=ArithemeticMeanFusion([scores[i] for i in range(len(ffolders)) ],weights)
-    with open(outscores,'w') as f:
-    	for item in fused_scores: f.write('{} {}\n'.format(item,fused_scores[item]))    
+	fused_scores=ArithemeticMeanFusion([scores[i] for i in range(len(ffolders)) ],weights)
+	with open(outscores,'w') as f:
+		for item in fused_scores: f.write('{} {}\n'.format(item,fused_scores[item]))    
 
 #%%
 normalize = False if sys.argv[-1]=='False' else True

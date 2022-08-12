@@ -47,12 +47,6 @@ class MLP(sklearnModel):
 		super().__init__()				
 		self.classifier = MLPClassifier(hidden_layer_sizes=model_args['hidden_layer_sizes'],solver=model_args['solver'],alpha=model_args['alpha'],learning_rate_init=model_args['learning_rate_init'], verbose=model_args['verbose'], activation=model_args['activation'], max_iter=int(model_args['max_iter']), random_state=model_args['random_state'])
         
-class linSVM(sklearnModel):
-	def __init__(self, model_args):
-		super().__init__()	
-		#bp()			
-		self.classifier = SVC(C=model_args['C'], kernel=model_args['kernel'],class_weight=model_args['class_weight'],verbose=model_args['verbose'],probability=model_args['probability'],random_state=model_args['random_state'])
-
 class LR(sklearnModel):
 	def __init__(self, model_args):
 		super().__init__()				
