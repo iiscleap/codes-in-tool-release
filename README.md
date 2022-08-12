@@ -26,3 +26,8 @@ After following steps 1,2,3 from **To get the BLSTM classifier results**,
 3. `csv_metadata_path`, `test1_path`, `test2_path` and `gnd_truth_path` may be set based on the classifier model to be analyzed for bias and fairness.
 4. Run `python bias_analysis.py` from Terminal.
 5. It computes the AUC for different subgroups in test set and associated p-value based on two-sided Mann–Whitney U statistical test.
+
+**To get the 95% confidence interval on classifiers AUC results based on bootstrap replicates**:
+Run the `bootstrap_sampling_CI_v2.py` in `statistics/bootstrap_sampling_CI` with appropriate arguments. Sample command:
+
+`python bootstrap_sampling_CI_v2.py -s 1000 -n test1_test2_scores.txt -l /home/debarpanb/verisk_dicova2/DICOVA/icml_workshop_covid_19/srikanth_e140522_transformer/data/test1_test2 -m AUC -c 95 -i /home/debarpanb/coswara_final_project/coswara_validation_study/e120422_debottam_26.4.22/results/breathing-shallow`
