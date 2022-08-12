@@ -7,4 +7,5 @@ This is the official github repository for the [screening-tool](https://coswara.
 3. Make sure to put `Coswara-Data` folder generated from step 2 inside `/home/data/`.
 4. Verify that `classifier_BLSTM_model/data/<audio-cat>/dev.scp` paths are now consistent for your local machine.
 5. Enter the folder `classifier_BLSTM_model` inside `codes-in-tool-release`.
+6. Run `prpare_feats.sh` for all the 9 audio categories: `breathing-deep`, `breathing-shallow`, `cough-heavy`, `cough-shallow`, `vowel-a`, `vowel-e`, `vowel-o`, `counting-normal`, `counting-fast`.
 6. Type `./run.sh` in your terminal and ENTER.
