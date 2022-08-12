@@ -31,3 +31,7 @@ After following steps 1,2,3 from **To get the BLSTM classifier results**,
 
 
 Run the `bootstrap_sampling_CI_v2.py` in `statistics/bootstrap_sampling_CI` with appropriate arguments. Sample command: `python bootstrap_sampling_CI_v2.py -s 1000 -n test1_test2_scores.txt -l /home/debarpanb/verisk_dicova2/DICOVA/icml_workshop_covid_19/srikanth_e140522_transformer/data/test1_test2 -m AUC -c 95 -i /home/debarpanb/coswara_final_project/coswara_validation_study/e120422_debottam_26.4.22/results/breathing-shallow`
+
+**To get details about gender, age, demographics and other factors for the dataset used**:
+
+`dataset_analysis.ipynb` computes number of samples in the dataset corresponding to subgroups based on age, gender, demographics etc. and different COVID and non-COVID subgroups.
