@@ -25,3 +25,4 @@ After following steps 1,2,3 from **To get the BLSTM classifier results**,
 2. `work_dir` should be set to path where bias analysis results are to be saved.
 3. `csv_metadata_path`, `test1_path`, `test2_path` and `gnd_truth_path` may be set based on the classifier model to be analyzed for bias and fairness.
 4. Run `python bias_analysis.py` from Terminal.
+5. It computes the AUC for different subgroups in test set and associated p-value based on two-sided Mann–Whitney U statistical test.
