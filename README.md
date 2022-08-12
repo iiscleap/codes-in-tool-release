@@ -20,6 +20,10 @@ After following steps 1,2,3 from **To get the BLSTM classifier results**,
 1. Verify that `classifier_LR_RF_MLP_models/data/<audio-cat>/all.scp` paths are now consistent in your local machine.
 2. Inside the folder `classifier_LR_RF_MLP_models`, run `./run.sh` in Terminal. It runs for a specific `<audio-cat>` (e.g. `cough-heavy`). Any of the 9 audio categories can be set at `audiocategory` field at the top of `run.sh`.
 
+**To perform non-uniform fusion of 9 audio modalities and/or symptom data**:
+
+1. Run `fuse_modalities_v2.ipynb` with appropriate `rootdir`, `res_folder` and other paths.
+
 **To get the bias and fairness analysis results**:
 1. Go to `bias_analysis.py`.
 2. `work_dir` should be set to path where bias analysis results are to be saved.
