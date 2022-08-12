@@ -26,19 +26,19 @@ def save_MWU_test_results(df_sample, df_score):
 
 #declare the paths
 work_dir = 'bias_analysis'
-csv_metadata_path = 'data/test1_test2_metadata.csv'
-test1_path, test2_path = 'data/test1', 'data/test2'
+csv_metadata_path = 'classifier_BLSTM_model/data/test1_test2_metadata.csv'
+test1_path, test2_path = 'classifier_BLSTM_model/data/test1', 'classifier_BLSTM_model/data/test2'
 df_test1 = pd.read_csv(test1_path, header=None, delimiter=' ')
 df_test1.columns = ['id', 'label']
 test1_ids = df_test1.id.values
 df_test2 = pd.read_csv(test2_path, header=None, delimiter=' ')
 df_test2.columns = ['id', 'label']
 test2_ids = df_test2.id.values
-gnd_truth_path ='data/test1_test2'
+gnd_truth_path ='classifier_BLSTM_model/data/test1_test2'
 #gnd_truth_path = 'data/test1'
 
 #mention the score paths on which bias analysis will be done
-score_paths = ['results/fusion/test1_scores.txt', 'results/fusion/test2_scores.txt']
+score_paths = ['classifier_BLSTM_model/results/fusion/test1_scores.txt', 'classifier_BLSTM_model/results/fusion/test2_scores.txt']
 
 df_metadata = pd.read_csv(csv_metadata_path)
 df_score = pd.concat([pd.read_csv(i, header=None, delimiter=' ') for i in score_paths])
