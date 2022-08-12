@@ -238,8 +238,5 @@ save_bias_analysis_results(save_dir, df_sample, df_score)
 
 p_pos = save_MWU_test_results(df_sample[df_sample.label=='p'], df_score[df_score.id.isin(pos_ids)])
 p_neg = save_MWU_test_results(df_sample[df_sample.label=='n'], df_score[df_score.id.isin(neg_ids)])
-print(f'p-val for pos:{p_pos}')
-
-print(f'p-val for neg:{p_neg}')
 
 print(f'hmean: {scipy.stats.hmean([p_pos, p_neg])}')
