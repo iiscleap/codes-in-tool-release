@@ -30,4 +30,4 @@ After following steps 1,2,3 from **To get the BLSTM classifier results**,
 **To get the 95% confidence interval on classifiers AUC results based on bootstrap replicates**:
 Run the `bootstrap_sampling_CI_v2.py` in `statistics/bootstrap_sampling_CI` with appropriate arguments. Sample command:
 
-`python bootstrap_sampling_CI_v2.py -s 1000 -n test1_test2_scores.txt -l /home/debarpanb/verisk_dicova2/DICOVA/icml_workshop_covid_19/srikanth_e140522_transformer/data/test1_test2 -m AUC -c 95 -i/home/debarpanb/coswara_final_project/coswara_validation_study/e120422_debottam_26.4.22/results/breathing-shallow`
+`python bootstrap_sampling_CI_v2.py -s 1000 -n test1_test2_scores.txt -l /home/debarpanb/verisk_dicova2/DICOVA/icml_workshop_covid_19/srikanth_e140522_transformer/data/test1_test2 -m AUC -c 95 -i /home/debarpanb/coswara_final_project/coswara_validation_study/e120422_debottam_26.4.22/results/breathing-shallow`
