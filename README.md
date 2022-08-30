@@ -39,3 +39,7 @@ Run the `bootstrap_sampling_CI_v2.py` in `statistics/bootstrap_sampling_CI` with
 **To get details about gender, age, demographics and other factors for the dataset used**:
 
 `dataset_analysis.ipynb` computes number of samples in the dataset corresponding to subgroups based on age, gender, demographics etc. and different COVID and non-COVID subgroups.
+
+**Results**:
+
+![alt text](https://github.com/iiscleap/codes-in-tool-release/blob/main/extras/coswara_results_classifiers.png?raw=true)
