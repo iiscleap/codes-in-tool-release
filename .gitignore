@@ -14,10 +14,10 @@
 **/results/
 
 #ignore images
-*.png
-*.jpg
-*.jpeg
-*.svg
+#*.png
+#*.jpg
+#*.jpeg
+#*.svg
 
 #ignore pickle files
 *.pkl
